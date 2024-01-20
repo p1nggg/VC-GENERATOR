@@ -1,0 +1,15 @@
+.navbar{
+    width: 95%;
+    height: 10vh;
+    margin-bottom: 5vh;
+    font-size: 1.7em;
+    background-color: #212529;
+    font-weight: bold;
+    font-family: 'Joti One', serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}

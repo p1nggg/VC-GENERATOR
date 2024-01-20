@@ -1,0 +1,12 @@
+.footer {
+    width: 95%;
+    margin-top: 5vh;
+    background-color: #212529; /* Цвет фона блока */
+    padding: 10px; /* Ваш отступ или заполнение */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Joti One', serif;
+}

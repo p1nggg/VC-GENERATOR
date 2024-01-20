@@ -1,0 +1,11 @@
+.inputlist {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto
+  
+}
+.inputlist:first-child{
+  margin-top: 2vh;
+}
