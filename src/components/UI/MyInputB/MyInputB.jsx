@@ -3,15 +3,15 @@ import React from 'react';
 import styles from './MyInputB.module.css';
 import {InputGroup, Form } from 'react-bootstrap';
 
-const MyInputB = ({props, ref, placeholder}) => {
+const MyInputB = ({onChange, ref, placeholder}) => {
 	return (
 		<div className={styles.myinputb}>
  			<InputGroup size="df" className="mb-3">
-        	<Form.Control
+        	<Form.Control className={styles.custom}
           		aria-describedby="inputGroup-sizing-sm"
           		ref = {ref}
 				placeholder={placeholder} 
-				{...props}
+				onChange = {onChange}
         	/>
       		</InputGroup>
  		</div>

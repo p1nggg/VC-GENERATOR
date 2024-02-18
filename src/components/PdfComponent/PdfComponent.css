@@ -1,0 +1,19 @@
+.pdfcomponent {
+  color: #212529; 
+  width: 40vw;
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-column-gap: 1vw;
+}
+#year__info{
+    display: flex;
+}
+h4{
+    color: #1e3a8a;
+}

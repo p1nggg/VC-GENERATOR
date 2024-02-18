@@ -1,19 +1,33 @@
 .formblock {
   background: #f3f4f9;
   width: 60%;
-  height: 130vh;
+  height: auto;
   border-radius: 1.5em;
-  
+  box-shadow: 0 0 10px #555;
+  margin-top: 5vh;
 }
 .buttons{
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 40%;
+    padding-bottom: 6vh;
+
+}
+.buttons h2{
+  margin-bottom: 0.5vh;
+}
+button:first-child{
+  margin-top: 3vh;
+  margin-bottom: 1vh;
 }
 
 .zagol{
-    margin-left: 5vw;
-    margin-bottom: 1vh;
+    margin-left: 6vw;
+    margin-bottom: -3vh;
+}
+@media(max-height: 800px){
+  .formblock{
+    margin-top: 13vh;
+  }
 }

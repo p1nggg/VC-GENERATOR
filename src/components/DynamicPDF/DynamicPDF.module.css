@@ -1,0 +1,86 @@
+.dynamicpdf {
+  width: 60%;
+  background: white;
+  min-height: 150vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 6vh;
+  box-shadow: 0 0 10px #555;
+
+}
+.dynamicpdf h2{
+    color:#1e3a8a;
+}
+.pdfHeader{
+    background: #1e3a8a;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.pdfHeader h1{
+    margin-left: 2vw;
+    color: white;
+    font-weight: bold;
+}
+.pdfHeader h2{
+    margin-left: 2vw;
+    color: white;
+    font-weight: bold;
+    width: 60%;
+    height: auto;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+.pdfMain{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    height: 100%;
+    
+}
+.pdfDescs:nth-child(n){
+    margin-left: 2vw;
+    margin-top: 3vh;
+    height: auto;
+}
+.pdfDescs:first-child{
+    width: 50%;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+.pdfDescs hr{
+    width: 40vw;
+}
+.pdfInform{
+    margin-left: 2vw;
+    background: #d1d5db;
+    min-height: 150vh;
+    display: flex;
+    flex-direction: column;
+
+}
+.pdfInform img{
+    width: 100%;
+}
+.pdfInform h3{
+    margin-left: 0.6vw;
+    margin-bottom: -1vh;
+    color:#1e3a8a
+}
+.pdfInform h5,p{
+    margin-left: 0.6vw;
+}
+.pdfDesc p{
+    width: 35vw;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+@media print{
+    .dynamicpdf{
+        height: 100%;
+        width: 100%;
+        margin: 0;
+    }
+}

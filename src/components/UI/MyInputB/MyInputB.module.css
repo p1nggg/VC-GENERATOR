@@ -1,3 +1,7 @@
 .myinputb {
     margin-top: 3vh;
 }
+.custom::placeholder{
+    font-weight: normal;
+    color:rgb(194, 192, 192)
+}
