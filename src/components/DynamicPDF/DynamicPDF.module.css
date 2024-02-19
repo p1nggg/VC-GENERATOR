@@ -84,3 +84,8 @@
         margin: 0;
     }
 }
+@media(max-width: 1000px){
+    .dynamicpdf{
+      width: 95%;
+    }
+  }
