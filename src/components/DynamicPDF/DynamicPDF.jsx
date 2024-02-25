@@ -3,7 +3,7 @@ import styles from "./DynamicPDF.module.css";
 import Image from "../../images/foto2.png";
 import PdfComponent from "../PdfComponent/PdfComponent";
 
-const DynamicPDF = ({ reff, inputs, inputs1, inputs2 }) => {
+const DynamicPDF = ({ reff, inputs, inputs1, inputs2, Image }) => {
   const result1 = useMemo(() => {
     const groupedInputs = {};
     inputs1.forEach((input) => {
@@ -86,6 +86,8 @@ const DynamicPDF = ({ reff, inputs, inputs1, inputs2 }) => {
           <p>{inputs[5].value}</p>
           <h5>Email</h5>
           <p>{inputs[6].value}</p>
+          <h5>Age</h5>
+          <p>{inputs[3].value}</p>
         </div>
       </div>
     </div>

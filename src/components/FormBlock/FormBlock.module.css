@@ -26,6 +26,18 @@ button:first-child{
     margin-left: 6vw;
     margin-bottom: -3vh;
 }
+.flex_file{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.h4{
+  margin-left: 6vw;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-top: 2vh;
+}
 @media(max-height: 800px){
   .formblock{
     margin-top: 13vh;

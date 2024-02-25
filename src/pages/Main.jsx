@@ -8,6 +8,8 @@ import DynamicPDF from "../components/DynamicPDF/DynamicPDF";
 import { useReactToPrint } from "react-to-print";
 import useDynamicInputs from "../hooks/useDynamicInputs";
 
+
+
 function Main() {
   const {
     inputFields: inputFields1,
@@ -26,7 +28,18 @@ function Main() {
     { href: "/land", value: "Главная" },
     { href: "/info", value: "Информация" },
   ];
+  const [Image, setImage] = useState('')
+  const handleFileChange = (event) => {
+    const file = event.target.files[0];
 
+    const reader = new FileReader();
+
+    reader.onload = () => {
+      setImage(reader.result);
+    };
+
+    reader.readAsDataURL(file);
+  };
   const {
     inputFields: inputFields2,
     addInputs: addInputs2,
@@ -45,7 +58,7 @@ function Main() {
     { id: 1, value: "Name", placeholder: "First Name" },
     { id: 2, value: "", placeholder: "Last Name" },
     { id: 3, value: "Title", placeholder: "Title" },
-    { id: 4, value: "-", placeholder: "Your Photo" },
+    { id: 4, value: "", placeholder: "Age" },
     { id: 5, value: "", placeholder: "Address" },
     { id: 6, value: "", placeholder: "Phone Number" },
     { id: 7, value: "", placeholder: "Email" },
@@ -93,12 +106,16 @@ function Main() {
         del2={deleteGroup2}
         ch1={handleInputChange1}
         ch2={handleInputChange2}
+        fileChange = {handleFileChange}
+        Image = {Image}
+        setImage = {setImage}
       />
       <DynamicPDF
         reff={contentRef}
         inputs1={inputFields1}
         inputs2={inputFields2}
         inputs={inputs}
+        Image = {Image}
       />
       <Footer />
     </div>

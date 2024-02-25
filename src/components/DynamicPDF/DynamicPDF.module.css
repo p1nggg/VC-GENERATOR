@@ -61,7 +61,9 @@
 
 }
 .pdfInform img{
-    width: 100%;
+    width: 95%;
+    margin-top: 0.5vh;
+    margin-left: 0.3vw;
 }
 .pdfInform h3{
     margin-left: 0.6vw;

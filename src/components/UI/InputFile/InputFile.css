@@ -1,0 +1,11 @@
+.inputfile {
+    margin-top: 3vh;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.custom::placeholder{
+    font-weight: normal;
+    color:rgb(194, 192, 192)
+}

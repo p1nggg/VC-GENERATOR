@@ -4,7 +4,7 @@ import styles from "./FormBlock.module.css";
 import InputList from "../InputList/InputList";
 import MyButton from "../UI/MyButton/MyButton";
 import DynamicInputs from "../DynamicInputs/DynamicInputs";
-
+import InputFile from "../UI/InputFile/InputFile";
 const FormBlock = ({
   buttons,
   inputs,
@@ -17,6 +17,9 @@ const FormBlock = ({
   ch1,
   ch2,
   setInputs,
+  fileChange,
+  Image,
+  setImage
 }) => {
   return (
     <div className={styles.formblock}>
@@ -71,6 +74,11 @@ const FormBlock = ({
             );
           }
         })}
+        <h4 className={styles.h4}>Выберите фото:</h4>
+        <div className={styles.flex_file}>
+          <InputFile onChange={fileChange} image={Image} setImage={setImage}/>
+        </div>
+        
       </div>
     </div>
   );
