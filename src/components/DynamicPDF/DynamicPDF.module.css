@@ -78,11 +78,9 @@
 }
 
 
-@media(min-width: 1440px){
-    @page {
-        margin:0;
-        size: A4 portrait;
-    }
+@page {
+    margin:0;
+    size: A4 portrait;
 }
 
 @media print{
