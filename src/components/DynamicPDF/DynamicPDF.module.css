@@ -1,7 +1,7 @@
 .dynamicpdf {
   width: 60%;
   background: white;
-  min-height: 150vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   margin-top: 6vh;
@@ -55,7 +55,7 @@
 .pdfInform{
     margin-left: 2vw;
     background: #d1d5db;
-    min-height: 150vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
 
@@ -77,12 +77,31 @@
     white-space: pre-wrap;
 }
 
+@page {
+    margin:0;
+    size: A4 portrait;
+}
+
+
 @media print{
     .dynamicpdf{
-        height: 100%;
-        width: 100%;
         margin: 0;
+        padding: 0;
     }
+    .pdfDesc p{
+        width: 59vw;
+    }
+    .pdfDescs hr{
+        width: 59vw;
+    }
+    .pdfHeader{
+        width: 100vw;
+    }
+    .pdfMain{
+        width: 100vw;
+    }
+
+    
 }
 @media(max-width: 1000px){
     .dynamicpdf{

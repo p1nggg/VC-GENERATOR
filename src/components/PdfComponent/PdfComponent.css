@@ -17,3 +17,8 @@
 h4{
     color: #1e3a8a;
 }
+@media print{
+    .pdfcomponent{
+        width: 59vw;
+    }
+}
